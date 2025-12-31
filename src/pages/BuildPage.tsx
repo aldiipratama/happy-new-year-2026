@@ -10,7 +10,7 @@ const responses: Record<
   capek: {
     emoji: "☕",
     message:
-      "Aku tau akhir-akhir ini kamu sering pulang kerja masih mikirin deadline. Istirahat dulu. Aku temenin dari sini.",
+      "Aku tau akhir-akhir ini kamu sering ngerasa kerja kamu kelihatan baik-baik aja, padahal capeknya kebawa sampai rumah. Istirahat dulu.",
   },
   fine: {
     emoji: "✨",
