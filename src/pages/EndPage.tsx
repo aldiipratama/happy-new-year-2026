@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom";
 export function EndPage() {
   const navigate = useNavigate();
 
+  const whatsappMessage = encodeURIComponent(
+    "Aku baru buka websitenya. Makasih ayangg."
+  );
+  const whatsappLink = `https://wa.me/6285798257393?text=${whatsappMessage}`;
+
   return (
     <div className="page end-page">
       <div className="content-container centered">
@@ -19,10 +24,19 @@ export function EndPage() {
           </p>
         </div>
 
-        <div className="end-buttons">
-          <button className="secondary-button" onClick={() => navigate("/")}>
-            Ulang dari awal
-          </button>
+        <div className="end-actions">
+          <span className="action-link" onClick={() => navigate("/")}>
+            kembali ke awal
+          </span>
+          <span className="action-divider">·</span>
+          <a
+            className="action-link"
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            kirim pesan
+          </a>
         </div>
       </div>
     </div>

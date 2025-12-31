@@ -327,15 +327,21 @@ h1 {
   font-size: 1rem;
 }
 
-.end-buttons {
-  margin-top: 2rem;
+.end-actions {
+  margin-top: 2.5rem;
 }
 
-.made-with {
-  margin-top: 3rem;
+.action-link {
   font-size: 0.875rem;
   color: var(--text-muted);
-  font-style: italic;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.action-divider {
+  margin: 0 0.75rem;
+  color: var(--text-muted);
+  opacity: 0.5;
 }
 
 /* ===== Pause Page ===== */
